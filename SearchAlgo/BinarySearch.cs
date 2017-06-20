@@ -65,5 +65,50 @@ namespace SearchAlgo
         }
 
 
+
+        public int SearchElementInCircularArray(int[] a,int findInt)
+        {
+            int result=-1;
+            int low = 0;
+            int n = a.Length;
+            int high = n - 1;
+
+            while (low<=high)
+            {
+                int mid = (high + low) / 2;
+
+                if (findInt == a[mid])
+                {
+                    result = mid;
+                }
+
+                if (a[mid]<=a[high])//right half sorted
+                {
+                    if (findInt > a[mid] && findInt <= a[high])
+                    {
+                        low = mid + 1; // go to right side
+                    }
+                    else
+                        high = mid - 1;// go to left side
+                }
+
+                else //left half is sorted a[low]<=a[mid]
+                {
+                    if (a[low]<=findInt && findInt<a[mid])
+                    {
+                        high = mid - 1;//go to left
+                    }
+                    else
+                    {
+                        low = mid + 1; //go to right
+                    }
+                }
+            }
+
+
+
+            return result;
+        }
+
     }
 }

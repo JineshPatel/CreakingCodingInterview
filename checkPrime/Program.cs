@@ -11,6 +11,11 @@ namespace checkPrime
     {
         static void Main(string[] args)
         {
+            string str = "aaabbc";
+            Console.WriteLine(   compressSting.CompressString(str));
+
+
+
             sort sorting = new sort();
             Console.WriteLine("enter Number");
             int n = Convert.ToInt32(Console.ReadLine());
@@ -59,6 +64,8 @@ namespace checkPrime
             //b.add(9);
             //b.add(2);
             al.kthLastElement(al.head, 2);
+            al.printRecursion(al.head);
+            al.reversePrintRecursion(al.head);
             // a.head = a.reverse(a.head);
 
             //  Console.WriteLine($"IsPalindrome : {a.isPlanDrom(a.head)}");

@@ -184,5 +184,42 @@ namespace checkPrime
 
             return fast;
         }
+
+        public void printRecursion(Node head)
+        {
+            if (head==null)
+            {
+                return;
+            }
+
+            Console.Write(head.data + " ");
+            printRecursion(head.next);
+        }
+
+        public void reversePrintRecursion(Node head)
+        {
+            if (head==null)
+            {
+                return;
+            }
+            reversePrintRecursion(head.next);
+            Console.Write(head.data + " ");
+
+        }
+
+
+        public void reverseLinkedList(Node p)
+        {
+            if (p.next==null)
+            {
+                head = p;
+                return;
+            }
+            reverseLinkedList(p.next);
+            Node n = p.next;//point to next node.
+            n.next = p;
+            p.next = null;
+
+        }
     }
 }

@@ -120,7 +120,7 @@ namespace checkPrime
                 }
                 else
                 {
-                    int temp = findMinTree(root.left);
+                    int temp = findMinTree(root.right);
                     root.data = temp;
                     root.right = Delete(root.right, temp);
                 }
@@ -289,5 +289,27 @@ namespace checkPrime
             }
 
         }
+
+        Dictionary<String, int> stringCount = new Dictionary<string, int>();
+        public void UniqueStringAndCount(TreeNode root)
+        {
+            if (root == null)
+            {
+                return;
+            }
+            if (stringCount.ContainsKey(root.data.ToString()))
+            {
+                stringCount[root.data.ToString()]++;
+            }
+            else
+            {
+                stringCount.Add(root.data.ToString(), 1);
+            }
+            Console.WriteLine(root.data);
+            UniqueStringAndCount(root.left);
+            UniqueStringAndCount(root.right);
+        }
+
+
     }
 }

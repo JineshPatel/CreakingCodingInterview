@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "checkPrime", "checkPrime\checkPrime.csproj", "{84893746-7659-4A16-97AD-3945CC6030DE}"
 EndProject
@@ -14,6 +14,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2dArraySpiralPrint", "2dArraySpiralPrint\2dArraySpiralPrint.csproj", "{BEF87F7B-0F65-4410-9F8D-0B212D57A476}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingAlgo", "SortingAlgo\SortingAlgo.csproj", "{38F302CC-8215-4F39-A809-8AD7D88FF1A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cube", "Cube\Cube.csproj", "{D9D43026-D2B9-461D-A87B-12D57A19C52A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloombergCoding", "BloombergCoding\BloombergCoding.csproj", "{6BBD1716-AC89-48E2-826A-480D03790280}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,8 +49,19 @@ Global
 		{38F302CC-8215-4F39-A809-8AD7D88FF1A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38F302CC-8215-4F39-A809-8AD7D88FF1A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38F302CC-8215-4F39-A809-8AD7D88FF1A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9D43026-D2B9-461D-A87B-12D57A19C52A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9D43026-D2B9-461D-A87B-12D57A19C52A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9D43026-D2B9-461D-A87B-12D57A19C52A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9D43026-D2B9-461D-A87B-12D57A19C52A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BBD1716-AC89-48E2-826A-480D03790280}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BBD1716-AC89-48E2-826A-480D03790280}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BBD1716-AC89-48E2-826A-480D03790280}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BBD1716-AC89-48E2-826A-480D03790280}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E357EF7B-831A-4DAF-B8E7-BB9D59430510}
 	EndGlobalSection
 EndGlobal

@@ -11,15 +11,15 @@ namespace checkPrime
     {
         static void Main(string[] args)
         {
-            string str = "aaabbc";
-            Console.WriteLine(   compressSting.CompressString(str));
+            //string str = "aaabbc";
+            //Console.WriteLine(   compressSting.CompressString(str));
 
 
 
-            sort sorting = new sort();
-            Console.WriteLine("enter Number");
-            int n = Convert.ToInt32(Console.ReadLine());
-            allFib(n);
+            //sort sorting = new sort();
+            //Console.WriteLine("enter Number");
+            //int n = Convert.ToInt32(Console.ReadLine());
+            //allFib(n);
             //for (int i = 1; i < n; i++)
             //{
             //    if(isPrime(i))
@@ -51,21 +51,24 @@ namespace checkPrime
 
 
             linkedLIst al = new linkedLIst();
-           // linkedLIst b = new linkedLIst();
-            al.add(1);
-            al.add(2);
-            al.add(3);
-            al.add(4);
-            al.add(5);
-            al.add(6);
-            al.add(4);
-
+            // linkedLIst b = new linkedLIst();
+            //al.add(1);
+            //al.add(2);
+            //al.add(3);
+            //al.add(4);
+            //al.add(5);
+            //al.add(6);
+            //al.add(4);
+            //al.Insert(2, 1);
+            //al.Insert(3, 2);
+            //al.Insert(4, 1);
+            //al.Insert(5, 2);
             //b.add(5);
             //b.add(9);
             //b.add(2);
-            al.kthLastElement(al.head, 2);
-            al.printRecursion(al.head);
-            al.reversePrintRecursion(al.head);
+            //al.kthLastElement(al.head, 2);
+            //al.printRecursion(al.head);
+            //al.reversePrintRecursion(al.head);
             // a.head = a.reverse(a.head);
 
             //  Console.WriteLine($"IsPalindrome : {a.isPlanDrom(a.head)}");
@@ -75,15 +78,15 @@ namespace checkPrime
 
 
 
-            int[] array = new int[] { 1,2,3,4,5,6,7,8};
-            Tree s = new Tree();
+            //int[] array = new int[] { 1,2,3,4,5,6,7,8};
+            //Tree s = new Tree();
           //  TreeNode k = s.createMinimalBST(array);
           //  s.levelOrder(k);
 
 
             TreeNode rootPtr = new TreeNode();
             rootPtr = null;
-            Tree a = new checkPrime.Tree();
+            Tree a = new Tree();
             rootPtr = a.Insert(rootPtr, 15);
             rootPtr = a.Insert(rootPtr, 10);
             rootPtr = a.Insert(rootPtr, 20);
@@ -91,22 +94,22 @@ namespace checkPrime
             rootPtr = a.Insert(rootPtr, 8);
             rootPtr = a.Insert(rootPtr, 1);
             rootPtr = a.Insert(rootPtr, 12);
-          //  a.levelOrder(rootPtr);
-
-            TreeNode root = new TreeNode();
-            root = null;
-            Tree b = new Tree();
-            root = b.Insert(root, 'M'); root = b.Insert(root, 'B');
-            root = b.Insert(root, 'Q'); root = b.Insert(root, 'Z');
-            root = b.Insert(root, 'A'); root = b.Insert(root, 'C');
-            Console.WriteLine(a.IsBST(rootPtr));
-            Console.WriteLine(b.IsBST(root));
-            // b.levelOrder(root);
-            //Console.WriteLine(a.FindHeight(rootPtr));
-            //bool test = a.search(rootPtr, n);
-            //Console.WriteLine(a.findMinTree(rootPtr));
-            //Console.WriteLine(test);
-            Console.WriteLine( fibo(n));
+            //  a.levelOrder(rootPtr);
+            a.UniqueStringAndCount(rootPtr);
+            //TreeNode root = new TreeNode();
+            //root = null;
+            //Tree b = new Tree();
+            //root = b.Insert(root, 'M'); root = b.Insert(root, 'B');
+            //root = b.Insert(root, 'Q'); root = b.Insert(root, 'Z');
+            //root = b.Insert(root, 'A'); root = b.Insert(root, 'C');
+            //Console.WriteLine(a.IsBST(rootPtr));
+            //Console.WriteLine(b.IsBST(root));
+            //// b.levelOrder(root);
+            ////Console.WriteLine(a.FindHeight(rootPtr));
+            ////bool test = a.search(rootPtr, n);
+            ////Console.WriteLine(a.findMinTree(rootPtr));
+            ////Console.WriteLine(test);
+            //Console.WriteLine( fibo(n));
             Console.ReadKey();
         }
 

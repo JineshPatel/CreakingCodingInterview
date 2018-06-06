@@ -79,6 +79,36 @@ namespace checkPrime
             return head;
         }
 
+       public Node deleteNthNode(int n)
+        {
+
+            return head;
+        }
+        public Node Insert(object data, int n)
+        {
+            Node temp = new Node();
+            temp.data = data;
+            temp.next = null;
+            int i = 1;
+            Node cur = head;
+            if (n==i)
+            {
+                temp.next = head;
+                head = temp;
+            }
+            else
+            {
+                while (i==n-2)
+                {
+                    cur = cur.next;
+                    i++;
+                }
+                temp.next = cur.next;
+                cur.next = temp;
+            }
+            
+            return head;
+        }
         public int kthLastElement(Node  head,int k)
         {
              
